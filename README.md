@@ -39,7 +39,7 @@ Distribution - Collection of software making up a Linux-based system. *eg. RHEL,
 
 
 Boot Loader - Program that boots the operating system. *eg. GRUB & ISOLINUX.*
-[Screenshot 2023-11-18 at 1.39.07 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/f78b1a77-cc88-4634-a803-c8974c368858)
+![Screenshot 2023-11-18 at 1.39.07 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/f78b1a77-cc88-4634-a803-c8974c368858)
 
 
 Service - Program that runs as a background process. *eg. httpd, bfsd, ftpd, and named.*
