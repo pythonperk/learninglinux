@@ -114,9 +114,67 @@ Afterwards it will check and analyze system hardware and intialize any hardware 
 
 ### Inital RAM Disk
 
-Inital RAM dsik - initramfs
+Inital RAM disk - initramfs
 
 ![Screenshot 2023-11-18 at 2.34.54 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/1b562181-d252-4483-af33-5d023075b5c8)
+
+### Text-Mode Login
+
+Near the end of the boot process, init starts a number of text-mode login prompts.
+These enable you to type your username followed by your password and to evenutally get a command shell.
+Ususally the default command shell is bash.
+
+### The Linux Kernel
+
+The bootloader loads the kernel and the initial Rm based file system into memory so it can be used directly by the kernel. When the kernel is loaded in RAM and it immediately initializes and configures the cpus memory and it also configures all hardware attached to the system. This includes all processes, IO subsystems, storage, and more. Kernel also loads necessary user space applications.
+
+### /sbin/init and Services
+
+Once the kernel has set up all its hardware and mounted to root file system.
+The kernel runs the ```/sbin/init``` which is the parent process.
+This becomes the inital process which then starts other processes to get the system running.
+Most processes trace their origins back to ```init```. Exceptions include the kernel processes.
+Kernel processes are started by the kernel directly and their job is to manage internal operating system details.
+
+![Screenshot 2023-11-18 at 9.22.29 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/b8688d13-7fd5-4eba-a3e5-a6bccc67a38a)
+
+
+Besides starting the system ```init``` is responsible for keeping the system runnning and for shutting it down cleanly. ```Init``` must act as necessary as a manager for all non-kernel processes. It cleans up after them upon completion, and restarts user login sefvices as needed when users login/logout.
+
+### Systemd
+
+### Linux Filesystem Basics
+
+Filesystems supported by Linux:
+- Conventional disk filesytstems
+  (ext3, ext4, XFS, Btrfs, JFS, NTFS, vfat, etc.)
+- Flash storage systems
+  (ubifs, jffs2, yaffs, etc.)
+- Database filesystems
+- Special purpose filesystems
+  (procfs, sysfs, tmpfs, squashfs, debugfs, etc.)
+
+### Partitions and Filesystems
+
+A Partition is a fiscally contiguous section of a disk or what appears to be so in many advanced setups.
+Filesystem is a method of storing or finding files on a hard disk, usually in a partition.
+
+Think of a partition as a container where a filesystem resides. Sometimes a filesystem can become larger than a partition.
+
+![Screenshot 2023-11-18 at 10.14.37 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/2cdb8eeb-bf8a-4495-98d2-9877b58ff793)
+
+### The Filesystem Hierarchy Standard
+
+Linux systems store their important files according to a standard layout called the filesystem hierarchy standard. 
+This is used to ensure that users, admins, and devs can move between distributions without having to relearn how the system is organized.
+
+ALL LINUX FILE SYSTEMS ARE CASE SENSITIVE!
+eg. /boot
+    /Boot
+    /BOOT
+
+The above example represents three different directories/folders.
+
 
 
 
