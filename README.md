@@ -175,6 +175,51 @@ eg. /boot
 
 The above example represents three different directories/folders.
 
+### Linux Distribution Installation
+
+Questions to ask before deciding on a distribution.
+
+**_What is the main function of the system?_**
+
+**_What types of packages are important to the organization?_** *eg. web server, word processing, etc.*
+
+**_How much hard disk space is required and how much is available?_** *eg. When installing Linux on an embedded device, space is usually constrained.*
+
+**_How often are packages updated?_**
+
+**_How long is the support cycle for each release?_** *eg. FTS releases have long-term support*
+
+**_What hardware are you running on_** *eg. Could be x86 ARM or PPC*
+
+**_Do you need long-term stability?_**
+
+**_Can you accept or need a more volatile cutting edge system running the latest software?_**
+
+![Screenshot 2023-11-19 at 1.36.04 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/e3582a80-1e86-4edc-bcc0-ab3da7616a2c)
+
+
+### Linux Installation: Planning
+
+The partiton layout needs to be decided at the time of installation. It can be difficult to change later.
+Nearly all installers provide a reasonable default layout with either all space dedicated to normal files on one big partition, and a smaller swap partition, or with a separate partitions for some space sensitive areas like ```/home``` and ```var```.
+
+### Linux Installation: Software Choices
+
+All installations include the minimum software for running a Linux distribution. Most installers provide options for adding categories of software common applications. *eg. Firefox web browser adn Libre Office Suite* 
+
+Like other operating systems Linux distributions are provied on removable media such as USB drives, CDs, DVDs.
+Most Linux distributions also support booting a small image and downloading the rest of the system over the network.
+These small images are usable on media or as Network boot images in which case it is possible to perform and install without using any local media.
+
+### Linux Installation: The Process
+
+The installation process is similar for all distributions.
+After booting from the installation media, the installer starts and asks questions about how the system should be setup. 
+
+These questions are skipped if an automatic installation file is provided, then the installation is performed.
+Finally the cpu reboots into the newly designed system.
+
+### Linux Installation: The Warning
 
 
 
