@@ -257,9 +257,11 @@ Finally the cpu reboots into the newly designed system.
 
   login using ssh 
 
+  To delete (or remove) a directory, use ```rmdir``` if the directory is empty or ```rm -r``` if there still any files or other directories inside of it.
+
   ```cd ~``` takes you back to home directory. or ``` cd /home```
 
-  ```cd ..`` takes you above 2 levels in the directory hierarchy.
+  ```cd ..``` takes you above 2 levels in the directory hierarchy.
 
   ``` cd $HOME``` take you to your home directory.
 
