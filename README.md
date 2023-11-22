@@ -244,3 +244,42 @@ Finally the cpu reboots into the newly designed system.
 ## Manipulating Text
 
 ## Network Operations
+
+
+## Basic Commands
+
+# Linux Commands - Day 1
+
+  print working directory = pwd
+
+  ```tree``` displays the order of the directories.
+  ```sudo apt``` or ```sudo snap``` is used for installations or updates/upgrades.
+
+  login using ssh 
+
+  ```cd ~``` takes you back to home directory. or ``` cd /home```
+
+  ```cd ..`` takes you above 2 levels in the directory hierarchy.
+
+  ``` cd $HOME``` take you to your home directory.
+
+  ``` cd $OLDPWD``` takes you to your previous pwd
+
+  ```ls``` list files in the directory.
+
+  ```mkdir``` is to create a directory. name the file after creating it. ```mkdir test```
+
+  ```rmdir``` to remove directory.
+
+  ```touch``` is to create a new empty file.
+
+  ```rm``` is to remove a file in directory.
+
+  ```mv``` to move the file in directory. Also used to rename a file.
+
+  ``` cp ``` is to coopy file then name the second file.
+  
+  ```cp my first-file my-second-file``` for example
+
+
+  ```tldr ls``` basically reads the manual to you in simple terms.
