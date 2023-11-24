@@ -259,23 +259,23 @@ Finally the cpu reboots into the newly designed system.
 
   To delete (or remove) a directory, use ```rmdir``` if the directory is empty or ```rm -r``` if there still any files or other directories inside of it.
 
-  ```cd ~``` takes you back to home directory. or ``` cd /home```
+  ```cd ~``` redirects you back to home directory. or ``` cd /home```
 
-  ```cd ..``` takes you above 2 levels in the directory hierarchy.
+  ```cd ..``` redirects you to the parent folder in the directory hierarchy.
 
   ``` cd $HOME``` take you to your home directory.
 
   ``` cd $OLDPWD``` takes you to your previous pwd
 
-  ```ls``` list files in the directory.
+  ```ls``` lists files in the directory.
 
-  ```mkdir``` is to create a directory. name the file after creating it. ```mkdir test```
+  ```mkdir``` is to create a directory. name the file after creating it. ```mkdir test``` will result in TEST as a new directory.
 
   ```rmdir``` to remove directory.
 
   ```touch``` is to create a new empty file.
 
-  ```rm``` is to remove a file in directory.
+  ```rm``` is to remove a file in directory. ```rm -r``` deletes a directory and the files it contains.
 
   ```mv``` to move the file in directory. Also used to rename a file.
 
@@ -285,3 +285,51 @@ Finally the cpu reboots into the newly designed system.
 
 
   ```tldr ls``` basically reads the manual to you in simple terms.
+  
+## Navigating the Command Line
+
+``` nmap``` is a port scanner. It allows us to scan a target system to see what ports are open , what services are running on it, which is a great way to get an image of what the target looks like.(You can't hack the system if you don't know what it is.) AKA Network Exploration tool and security/port scanner.
+
+```locate``` can be used to find a specific file in many folders/directories. 
+```find``` simliar to locate. find will find anything you're looking for. not just binaries. can find files by name, size, etc. can aso filter using ```grep```.
+
+```whereis``` checks all binary folders aka ```bin/sbin``` for the specific file. Shows you where the binary is that holds that file.
+*eg.*  ```ubuntu@ouroboros:/$ whereis snap
+snap: /usr/bin/snap /usr/share/man/man8/snap.8.gz```
+
+
+```which``` shows where the specific files binary is AMONG the directories in the $PATH variable aka ```echo $PATH```.
+
+```timedatectl``` shows current timezone and date.
+
+``` hostnamectl``` show the hostname with all relevant information.
+
+``` sudo hostnamectl set-hostname {new hostname}``` script to set new hostname for environment.
+
+``` timedatectl set-timezone {timezone}``` script to set new timezone.
+
+- Check the current system clock time:
+  
+```timedatectl```
+
+- Set the local time of the system clock directly:
+  
+```timedatectl set-time "{{yyyy-MM-dd hh:mm:ss}}"```
+
+- List available timezones:
+  
+```timedatectl list-timezones```
+
+- Set the system timezone:
+  
+```timedatectl set-timezone {timezone}```
+
+- Enable Network Time Protocol (NTP) synchronization:
+  
+```timedatectl set-ntp on```
+
+## Linux Directories
+
+![IMG_4507.jpg](https://github.com/pythonperk/learninglinux/assets/86713638/1d9aa330-8563-4f71-a09e-80737c001e5a)
+
+
