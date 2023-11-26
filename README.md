@@ -283,6 +283,8 @@ Finally the cpu reboots into the newly designed system.
   
   ```cp my first-file my-second-file``` for example
 
+  ```/etc/``` holds all configuration files for the device you are on. This folder is the most important folder.
+
 
   ```tldr ls``` basically reads the manual to you in simple terms.
   
@@ -327,6 +329,43 @@ snap: /usr/bin/snap /usr/share/man/man8/snap.8.gz```
 - Enable Network Time Protocol (NTP) synchronization:
   
 ```timedatectl set-ntp on```
+
+### Pagination - Day 5
+
+```less``` has more features than ```more```. Refer to ```h``` for more info in detail.
+
+```man more``` directs user to the manual pages descirbing uses for "more"
+
+```man less``` directs user to the manual pages describing uses for "less"
+
+``` h``` for info to use those commands in more detail
+
+```history``` is used to see all commands used in the past.
+The number labeled on each command can be used to re-run the command as a shortcut.
+*eg. !332 to run "Midnight commander"*
+
+```history 10``` is used to show the last ten commands used.
+```!-1``` and ```!!``` are both used to run and execute the previous command.
+
+### DOT Files
+
+```ls -a``` shows all hidden files/folders known as DOT Files.
+
+If the user forgot to use ```sudo``` and permission/access was denied, run ```sudo !!``` as the next command instead of retyping and adding sudo to the beginning.
+
+``` nano``` can be the command before the file/foldeer to reveal the contents in a neat text editor making it easier to read.
+
+**To navigate complex pages:**
+
+Enter is used to continue line by line. Arrow keys can be used as an alternative.
+Spacebar is used to continue page by page.
+```g``` is used to to navigate to the BOF. beginning of file.
+```G``` is used to navigate to EOF. end of file.
+```/``` is sued to search within contents of file.
+```n``` is used to continue to next result.
+```N``` is used to continue to previous result.
+
+
 
 ## Linux Directories
 
