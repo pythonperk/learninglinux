@@ -365,7 +365,84 @@ Spacebar is used to continue page by page.
 ```n``` is used to continue to next result.
 ```N``` is used to continue to previous result.
 
+## Editing with VIM - Day 6
 
+VIM = Vi improved
+
+```q!``` = force quit
+
+Changed file in ```etc/services ./``` by typing ```:w``` for write, 
+```:w {name of file}``` to write and save a name for the file,
+```:wq``` to save and quit.
+
+```gg``` is to navigate to BOF
+```G``` is to navigate to EOF. 
+
+Arrow keys are used to move around and as an alternative
+![Screenshot 2023-11-26 at 2.49.11 PM.png](https://github.com/pythonperk/learninglinux/assets/86713638/e1b17a9c-713f-4c3d-a7b5-789b386c5a3b)
+
+### Normal Mode
+
+Normal Mode is when the user cannot make any changes, and can navigate the terminal without making changes. Normal mode can be entered by typing the escape key.
+
+Lowercase ```x``` can be used to delete one letter at a time. Only in Normal Mode.
+
+Lowercase ```dd``` is used to delete the entire line.
+
+To revert changes, ```u``` works as an undo action.
+
+To redo an action, use ```ctrl + r```
+
+```/``` is used to search for a specific number of instances. Lowercase ```n``` to go to the next search result.
+
+### Insert Mode
+
+Insert Mode allows the user to insert new data.
+To enter Insert Mode, type ```I```
+
+### Visual Mode
+
+Select ```V``` to enter Visual Mode.
+Visual Mode creates a highlighter for specific files that the user may want to edit.
+Visual Mode also allows the user to copy, paste, and replace.
+
+
+use Visual Mode to select what needs to copied by using lowercase ```y```, then press ```p``` to paste
+
+```yyp``` is used to copy the entire line and paste it. Insert Mode is not a necessity here.
+
+
+
+### Command Mode
+
+Command Mode allows the user to run specific commands, such as ```w```, ```wq```, etc.
+CUT = DELETE
+
+To delete a portion of text in Visual Mode, use lowercase ```v``` and use the arrow keys to select the specified text.
+Then lowercase ```d``` to delete the selected text.
+
+cop(y) = yank
+
+To Find and Replace
+
+```:%s/old/new/gc```
+
+- % = across all lines
+- s =substitute
+- old = old name of file/pattern
+- new = new name of file/pattern
+- (g) = global change
+- (c) = confirms the replacement of the first word
+
+Afterwards the system will confirm if the user wants to make these changes.
+
+perk@orobouros: $ vimtutor
+
+vimtutor is a detailed tutorial of how to use VIM.
+
+Vim Adventures is a game to learn how to use VIM on an expert level.
+
+[Vim Adventures](https://vim-adventures.com)
 
 ## Linux Directories
 
