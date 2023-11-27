@@ -367,6 +367,8 @@ Spacebar is used to continue page by page.
 
 ## Editing with VIM - Day 6
 
+Enter ```vi --version``` to find current vi version
+
 VIM = Vi improved
 
 ```q!``` = force quit
@@ -443,6 +445,20 @@ vimtutor is a detailed tutorial of how to use VIM.
 Vim Adventures is a game to learn how to use VIM on an expert level.
 
 [Vim Adventures](https://vim-adventures.com)
+
+## Installing Apache2
+
+Apache is a well known web server software.
+Apache provdes service for http access.
+
+After installation, the user can check the status of the application by running:
+```sudo systemctl status apache2```
+
+To stop the app from running:
+```sudo systemctl stop apache2```
+
+To start the app:
+```sudo systemctl stop apache2```
 
 ## Linux Directories
 
